@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:C:/edu/base/db/BASE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE
+    driver-class-name: org.h2.Driver
+    username: base_user
+    password: iiac0!@#$
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    showSql: true
+  messages:
+    basename: i18n/exception
+    encoding: UTF-8
+  jwt:
+    secret: iiac0!@#$
