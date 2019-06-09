@@ -4,6 +4,7 @@ plugins {
 }
 
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'idea'
 
 group = 'com.saltlux.api.base'
 version = '0.0.1-SNAPSHOT'
@@ -37,7 +38,7 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore
 	compile group: 'org.apache.httpcomponents', name: 'httpcore', version: '4.4.11'
 // https://mvnrepository.com/artifact/commons-codec/commons-codec
-	compile group: 'commons-codec', name: 'commons-codec', version: '1.12'
+//	compile group: 'commons-codec', name: 'commons-codec', version: '1.12'
 
 	// https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
 	compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.8'
