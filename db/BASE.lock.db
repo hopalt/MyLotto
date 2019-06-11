@@ -1,6 +1,6 @@
 #FileLock
-#Sat Jun 08 16:18:10 KST 2019
-hostName=DESKTOP-457TVQL
-id=16b35f3a4a1ea8ab43f4687bcb8dfe05987d689a731
+#Tue Jun 11 16:40:59 KST 2019
+hostName=LAPTOP-3SDOTBUQ
+id=16b457b89a4935bf15baf83d65e9f5562484fd28a09
 method=file
-server=192.168.0.23\:56043
+server=192.168.0.74\:55561

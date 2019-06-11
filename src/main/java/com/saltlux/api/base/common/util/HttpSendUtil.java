@@ -37,7 +37,6 @@ public class HttpSendUtil {
 	 * @throws IOException 
 	 * @throws ClientProtocolException 
 	 */
-	@SuppressWarnings("unlikely-arg-type")
 	public static String doGet(String url, Map<String, Object> paramMap) throws ClientProtocolException, IOException {
 
 		String tempUrl = url;
@@ -65,8 +64,8 @@ public class HttpSendUtil {
 		
 		//타임아웃 설정
 		RequestConfig reqConfig = RequestConfig.copy(RequestConfig.DEFAULT)
-				.setConnectionRequestTimeout(2000)
-				.setConnectTimeout(2000)
+				.setConnectionRequestTimeout(15000)
+				.setConnectTimeout(15000)
 				.build();
 		
 		request.setConfig(reqConfig);
@@ -112,8 +111,8 @@ public class HttpSendUtil {
 		
 		//타임아웃 설정
 		RequestConfig reqConfig = RequestConfig.copy(RequestConfig.DEFAULT)
-			.setConnectionRequestTimeout(2000)
-			.setConnectTimeout(2000)
+			.setConnectionRequestTimeout(4000)
+			.setConnectTimeout(4000)
 			.build();
 		
 		request.setConfig(reqConfig);
