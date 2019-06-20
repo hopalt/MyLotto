@@ -1,0 +1,26 @@
+package com.saltlux.api.base.common.component;
+
+import javax.annotation.PostConstruct;
+
+import com.saltlux.api.base.lotto.service.LottoOldService;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+/**
+ * 시작시 초기화 할 컴포넌트
+ */
+@Component
+public class StartComponent{
+
+  @Autowired
+  private LottoOldService lottoOldService;
+
+  @PostConstruct
+  public void init(){
+    
+    lottoOldService.getCheckLotto();
+
+  }
+
+}

@@ -50,5 +50,13 @@ public class LottoController {
     return responseService.getSingleResult(maxNo);
   }
 
+  @GetMapping("/analysisLotto")
+  public SingleResult<Boolean> analysisLotto(){
+
+    lottoOldService.analysisLotto();
+
+    return responseService.getSingleResult(true);
+  }
+
 
 }
