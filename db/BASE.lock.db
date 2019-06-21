@@ -1,6 +1,6 @@
 #FileLock
-#Thu Jun 20 18:04:02 KST 2019
+#Fri Jun 21 14:35:42 KST 2019
 hostName=LAPTOP-3SDOTBUQ
-id=16b7420ce24f632929729a624054a3aff8f9de1ce03
+id=16b78886ffbc1535fa56dc08e654d8a004a12e5ba9d
 method=file
-server=192.168.56.1\:52233
+server=192.168.56.1\:60024

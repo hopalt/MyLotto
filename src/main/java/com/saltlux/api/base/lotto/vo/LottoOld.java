@@ -64,4 +64,9 @@ public class LottoOld {
     @Column(name = "drwt_no_6", nullable = false)
     private int drwtNo6;
 
+    /**
+     * 보너스 당첨 번호
+     */
+    @Column(name = "bnus_no", nullable = true)
+    private int bnusNo;
 }

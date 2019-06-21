@@ -32,7 +32,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
       .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS) //jwt token으로 인증 하므로 세션은 필요 없음
       .and()
         .authorizeRequests()  //다음 리퀘스트에 대한 사용 훤한 체크
-          .antMatchers("/*/login", "/*/signup", "/lotto/*").permitAll()        //가입 및 인증은 누구나 접근 가능
+          .antMatchers("/*/login", "/*/signup", "/lotto/**").permitAll()        //가입 및 인증은 누구나 접근 가능
           .antMatchers(HttpMethod.GET, "helloworld/**").permitAll() //helloworld로 시작하는 get 요청 리소스는 누구나 접근 가능
           .anyRequest().hasRole("USER") //그외 요청은 인증된 회원만 가능
       .and()

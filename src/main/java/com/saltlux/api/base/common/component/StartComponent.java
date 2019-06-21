@@ -2,7 +2,7 @@ package com.saltlux.api.base.common.component;
 
 import javax.annotation.PostConstruct;
 
-import com.saltlux.api.base.lotto.service.LottoOldService;
+import com.saltlux.api.base.lotto.service.LottoService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -14,12 +14,12 @@ import org.springframework.stereotype.Component;
 public class StartComponent{
 
   @Autowired
-  private LottoOldService lottoOldService;
+  private LottoService lottoService;
 
   @PostConstruct
   public void init(){
     
-    lottoOldService.getCheckLotto();
+    lottoService.getCheckLotto();
 
   }
 
